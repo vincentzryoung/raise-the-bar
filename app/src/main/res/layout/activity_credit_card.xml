@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Name"
+        android:text="Cardholder's Name"
         android:id="@+id/textView2"
         android:textColor="#bdc3c7"
         android:layout_marginTop="15dp"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Email"
+        android:text="Card Number"
         android:textColor="#bdc3c7"
         android:id="@+id/textView3"
         android:layout_marginTop="10dp"
@@ -53,7 +53,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="betienne@gmail.com"
+        android:text="···· ···· ···· 4895"
         android:ems="10"
         android:id="@+id/editText2"
         android:layout_below="@+id/textView"
@@ -62,25 +62,69 @@
         android:textColor="#ecf0f1"
         android:editable="false"
         android:layout_marginLeft="10dp"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:password="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Expiry Date (MMYY)"
+        android:textColor="#bdc3c7"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="····"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ecf0f1"
+        android:editable="false"
+        android:layout_marginLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:password="true"
+        android:maxLength="4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CVV"
+        android:textColor="#bdc3c7"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="···"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ecf0f1"
+        android:editable="false"
+        android:layout_marginLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:password="true"
+        android:maxLength="3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Favourite Drinks"
+        android:text="Save"
         android:layout_marginTop="10dp"
         android:id="@+id/button2"
         android:layout_marginLeft="10dp"
 
         />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edit Credit Card"
-        android:layout_marginTop="10dp"
-        android:id="@+id/button"
-        android:layout_marginLeft="10dp"
-        android:onClick="goCreditCard"/>
 
 </LinearLayout>

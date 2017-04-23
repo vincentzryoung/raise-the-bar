@@ -2,21 +2,25 @@ package com.raisethebar.raisethebar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Rum extends AppCompatActivity {
+public class CreditCard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rum);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        setContentView(R.layout.activity_credit_card);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_rum, menu);
+        getMenuInflater().inflate(R.menu.menu_credit_card, menu);
         return true;
     }
 
@@ -33,5 +37,11 @@ public class Rum extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.enter2, R.anim.exit2);
     }
 }

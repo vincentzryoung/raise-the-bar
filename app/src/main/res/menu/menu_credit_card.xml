@@ -1,5 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.raisethebar.raisethebar.Account">
+    tools:context="com.raisethebar.raisethebar.CreditCard">
 </menu>

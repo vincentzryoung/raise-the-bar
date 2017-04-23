@@ -2,6 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2c3e50"
+
     tools:context=".Welcome">
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -10,14 +12,14 @@
         android:orientation="vertical" />
 
     <ImageView
-        android:id="@+id/JohnSmith"
+        android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/welcome" />
+        android:src="@drawable/bar" />
 
     <Button
-        android:id="@+id/goBar"
+        android:id="@+id/goHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -27,7 +29,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="@android:color/transparent"
-        android:onClick="goBar"
+        android:onClick="goHome"
         android:visibility="visible" />
 
     <RelativeLayout

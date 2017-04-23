@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/lol"
+    android:background="#2980b9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:layout_marginBottom="5dp"
+        android:textColor="#ecf0f1"
+        android:id="@+id/item_price"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#ecf0f1"
+        android:id="@+id/item_name"
+        android:textSize="20dp"
+        android:layout_below="@+id/item_price"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredient"
+        android:layout_marginTop="5dp"
+        android:textColor="#ecf0f1"
+        android:id="@+id/item_ingredient"
+        android:layout_below="@+id/item_name"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:text="-"
+        android:src="@drawable/up2"
+        android:textColor="#2c3e50"
+        android:focusable="false"
+        android:background="#ecf0f1"
+        android:layout_alignTop="@+id/item_name"
+        android:layout_above="@+id/item_ingredient" />
+    <!--android:onClick="onDeleteClick" -->
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBtn"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/up2"
+        android:text="+"
+        android:textColor="#2c3e50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:focusable="false"
+        android:background="#ecf0f1"
+        android:layout_alignTop="@+id/item_name"
+        android:layout_alignBottom="@+id/item_name" />
+        <!--android:onClick="onAddClick" -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:textColor="#ecf0f1"
+        android:id="@+id/label"
+        android:layout_below="@+id/item_ingredient"
+        android:layout_toLeftOf="@+id/addBtn"
+        android:layout_toStartOf="@+id/addBtn"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#ecf0f1"
+        android:id="@+id/item_quantity"
+
+        android:layout_alignTop="@+id/label"
+        android:layout_alignRight="@+id/addBtn"
+        android:layout_alignEnd="@+id/addBtn"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+
+
+
+</RelativeLayout>
