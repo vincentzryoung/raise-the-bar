@@ -1,8 +1,10 @@
-# bar·ter
+# barÂ·ter
 
 An app to help bar-goers purchase drinks through their phones. When the drinks are ready, users get a notification on their phones telling them where to pick it up. The users are then matched to their drinks for quick and easy service.
 
-Order smarter with bar·ter!
+Order smarter with barÂ·ter!
+
+Check out UI and some more details on our design at: https://devpost.com/software/bar-ter
 
 ## Installation
 
